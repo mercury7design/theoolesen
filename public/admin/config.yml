@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: your-username/theoolesen.com
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: projects
+    label: Projects
+    folder: src/content/projects
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - label: Category
+        name: category
+        widget: select
+        options:
+          - Brand Identity
+          - Web
+          - Typography
+      - { label: Client, name: client, widget: string, required: false }
+      - { label: Year, name: year, widget: number, required: false }
+      - { label: Thumbnail, name: thumbnail, widget: image }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - { label: Order, name: order, widget: number, default: 99 }
+      - { label: Body, name: body, widget: markdown }

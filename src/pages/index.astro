@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const allProjects = await getCollection('projects');
+const projects = allProjects.sort((a, b) => a.data.order - b.data.order);
+
+const featured = projects.filter(p => p.data.featured);
+const small = projects.filter(p => !p.data.featured);
+---
+<Base>
+  <section class="work-grid">
+    {featured.length > 0 && (
+      <div class="work-grid__featured">
+        {featured.map(project => (
+          <a href={`/work/${project.id}`} class="project-card">
+            <div class="project-card__thumb">
+              <img
+                src={project.data.thumbnail}
+                alt={project.data.title}
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+            <div class="project-card__meta">
+              <span class="project-card__title">{project.data.title}</span>
+              <span class="project-card__category">{project.data.category}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+
+    {small.length > 0 && (
+      <div class="work-grid__small">
+        {small.map(project => (
+          <a href={`/work/${project.id}`} class="project-card">
+            <div class="project-card__thumb">
+              <img
+                src={project.data.thumbnail}
+                alt={project.data.title}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="project-card__meta">
+              <span class="project-card__title">{project.data.title}</span>
+              <span class="project-card__category">{project.data.category}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+</Base>
