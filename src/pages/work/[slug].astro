@@ -1,20 +1,24 @@
 ---
-import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import PortfolioMedia from '../../components/PortfolioMedia.astro';
+import { getProjects, getProjectBySlug } from '../../lib/portfolio';
 
 export async function getStaticPaths() {
-  const projects = await getCollection('projects');
-  return projects.map(project => ({
-    params: { slug: project.id },
-    props: { project },
+  return getProjects().map((project) => ({
+    params: { slug: project.slug },
   }));
 }
 
-const { project } = Astro.props;
-const { Content } = await render(project);
-const { title, category, client, year } = project.data;
+const slug = Astro.params.slug ?? '';
+const project = getProjectBySlug(slug);
+
+if (!project) {
+  throw new Error(`Unknown project slug: ${slug}`);
+}
+
+const { title, category, client, year, description, body, gallery } = project;
 ---
-<Base title={`${title} — Theo Olesen`} description={`${title} — ${category} project by Theo Olesen.`}>
+<Base title={`${title} — Theo Olesen`} description={description || `${title} — ${category} project by Theo Olesen.`}>
   <article class="case-study">
     <a href="/" class="case-study__back">Work</a>
 
@@ -25,10 +29,105 @@ const { title, category, client, year } = project.data;
         {client && <span>{client}</span>}
         {year && <span>{year}</span>}
       </div>
+      {description && <p class="case-study__lede">{description}</p>}
     </header>
 
     <div class="case-study__body">
-      <Content />
+      {body.split('\n\n').filter(Boolean).map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
     </div>
+
+    <section class="project-gallery" aria-label={`${title} gallery`}>
+      {gallery.map((item, index) => (
+        <button
+          type="button"
+          class="project-gallery__item"
+          data-lightbox-trigger
+          data-lightbox-src={item.src || item.url}
+          data-lightbox-alt={item.alt}
+          data-lightbox-caption={item.caption || ''}
+        >
+          {item.type === 'video' ? (
+            <video
+              class="project-gallery__media"
+              src={item.src || item.url}
+              poster={item.poster}
+              controls
+              playsinline
+              preload="metadata"
+            />
+          ) : (
+            <PortfolioMedia
+              asset={item.asset}
+              src={item.src}
+              alt={item.alt}
+              animated={item.animated}
+              loading={index < 2 ? 'eager' : 'lazy'}
+              class="project-gallery__media"
+              sizes="(min-width: 1100px) 68rem, 100vw"
+            />
+          )}
+          {item.caption && <span class="project-gallery__caption">{item.caption}</span>}
+        </button>
+      ))}
+    </section>
   </article>
+
+  <dialog class="lightbox" data-lightbox>
+    <button type="button" class="lightbox__close" data-lightbox-close aria-label="Close image">Close</button>
+    <div class="lightbox__frame">
+      <img src="" alt="" class="lightbox__image" data-lightbox-image />
+      <p class="lightbox__caption" data-lightbox-caption hidden></p>
+    </div>
+  </dialog>
 </Base>
+
+<script is:inline>
+  const dialog = document.querySelector('[data-lightbox]');
+  const lightboxImage = dialog?.querySelector('[data-lightbox-image]');
+  const lightboxCaption = dialog?.querySelector('[data-lightbox-caption]');
+  const triggers = document.querySelectorAll('[data-lightbox-trigger]');
+
+  if (dialog instanceof HTMLDialogElement && lightboxImage instanceof HTMLImageElement) {
+    const openLightbox = (trigger) => {
+      lightboxImage.src = trigger.dataset.lightboxSrc || '';
+      lightboxImage.alt = trigger.dataset.lightboxAlt || '';
+
+      if (lightboxCaption instanceof HTMLElement) {
+        const caption = trigger.dataset.lightboxCaption || '';
+        lightboxCaption.textContent = caption;
+        lightboxCaption.hidden = caption.length === 0;
+      }
+
+      dialog.showModal();
+      document.documentElement.classList.add('has-lightbox');
+    };
+
+    const closeLightbox = () => {
+      dialog.close();
+      document.documentElement.classList.remove('has-lightbox');
+    };
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener('click', () => openLightbox(trigger));
+    });
+
+    dialog.addEventListener('click', (event) => {
+      if (event.target === dialog) {
+        closeLightbox();
+      }
+    });
+
+    dialog.querySelector('[data-lightbox-close]')?.addEventListener('click', closeLightbox);
+    dialog.addEventListener('close', () => {
+      document.documentElement.classList.remove('has-lightbox');
+    });
+
+    window.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && dialog.open) {
+        closeLightbox();
+      }
+    });
+  }
+</script>

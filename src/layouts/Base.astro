@@ -1,12 +1,15 @@
 ---
+import { getSiteData } from '../lib/portfolio';
+
 interface Props {
   title?: string;
   description?: string;
 }
 
+const site = getSiteData();
 const {
-  title = 'Theo Olesen — Brand Architect',
-  description = 'Theo Olesen is a Brand Architect working in brand identity, web, and typography.',
+  title = `${site.name} — ${site.role}`,
+  description = site.description,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -31,8 +34,10 @@ const isAbout = Astro.url.pathname === '/about';
 <body>
   <div class="site-wrap">
     <nav class="site-nav">
-      <a href="/" class="site-nav__home">Theo Olesen <span>— Brand Architect</span></a>
-      <a href="/about" class="site-nav__link" aria-current={isAbout ? 'page' : undefined}>About</a>
+      <a href="/" class="site-nav__home">Theo Olesen, Designer.</a>
+      <div class="site-nav__links">
+        <a href="/about" class="site-nav__link" aria-current={isAbout ? 'page' : undefined}>About</a>
+      </div>
     </nav>
 
     <main>
@@ -40,7 +45,7 @@ const isAbout = Astro.url.pathname === '/about';
     </main>
 
     <footer class="site-footer">
-      <span>Theo Olesen</span>
+      <span>{site.location}</span>
       <span>© {new Date().getFullYear()}</span>
     </footer>
   </div>

@@ -1,55 +1,43 @@
 ---
-import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import PortfolioMedia from '../components/PortfolioMedia.astro';
+import { getProjects, getWorkIntro } from '../lib/portfolio';
 
-const allProjects = await getCollection('projects');
-const projects = allProjects.sort((a, b) => a.data.order - b.data.order);
-
-const featured = projects.filter(p => p.data.featured);
-const small = projects.filter(p => !p.data.featured);
+const projects = getProjects();
+const workIntro = getWorkIntro();
 ---
 <Base>
-  <section class="work-grid">
-    {featured.length > 0 && (
-      <div class="work-grid__featured">
-        {featured.map(project => (
-          <a href={`/work/${project.id}`} class="project-card">
-            <div class="project-card__thumb">
-              <img
-                src={project.data.thumbnail}
-                alt={project.data.title}
-                loading="eager"
-                decoding="async"
-              />
-            </div>
-            <div class="project-card__meta">
-              <span class="project-card__title">{project.data.title}</span>
-              <span class="project-card__category">{project.data.category}</span>
-            </div>
-          </a>
-        ))}
-      </div>
-    )}
+  <section class="work-intro">
+    <p>{workIntro}</p>
+  </section>
 
-    {small.length > 0 && (
-      <div class="work-grid__small">
-        {small.map(project => (
-          <a href={`/work/${project.id}`} class="project-card">
-            <div class="project-card__thumb">
-              <img
-                src={project.data.thumbnail}
-                alt={project.data.title}
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div class="project-card__meta">
-              <span class="project-card__title">{project.data.title}</span>
-              <span class="project-card__category">{project.data.category}</span>
-            </div>
-          </a>
-        ))}
-      </div>
-    )}
+  <section class="work-grid" aria-label="Selected work">
+    {projects.map((project, index) => (
+      <a
+        href={`/work/${project.slug}`}
+        class:list={[
+          'project-card',
+          project.gridSize === 'hero' && 'project-card--hero',
+        ]}
+      >
+        <div class="project-card__thumb">
+          <PortfolioMedia
+            asset={project.thumbnailAsset}
+            src={project.thumbnail}
+            alt={project.title}
+            animated={project.thumbnail?.endsWith('.gif')}
+            loading={index < 3 ? 'eager' : 'lazy'}
+            sizes={project.gridSize === 'hero'
+              ? '(min-width: 1100px) 48vw, 100vw'
+              : '(min-width: 1100px) 31vw, (min-width: 700px) 48vw, 100vw'}
+            class="project-card__image"
+          />
+        </div>
+        <div class="project-card__meta">
+          <span class="project-card__title">{project.title}</span>
+          <span class="project-card__category">{project.category}</span>
+        </div>
+      </a>
+    ))}
   </section>
 </Base>

@@ -1,0 +1,48 @@
+---
+import { Picture } from 'astro:assets';
+import { assetUrl, isImageMetadata } from '../lib/portfolio';
+
+interface Props {
+  asset?: import('../lib/portfolio').ResolvedAsset;
+  src?: string;
+  alt: string;
+  animated?: boolean;
+  class?: string;
+  sizes?: string;
+  loading?: 'eager' | 'lazy';
+  widths?: number[];
+}
+
+const {
+  asset,
+  src,
+  alt,
+  animated = false,
+  class: className,
+  sizes = '(min-width: 1100px) 33vw, (min-width: 700px) 50vw, 100vw',
+  loading = 'lazy',
+  widths = [480, 900, 1400, 2000, 2800],
+} = Astro.props;
+
+const resolvedSrc = src || assetUrl(asset);
+---
+
+{animated || !isImageMetadata(asset) ? (
+  <img
+    src={resolvedSrc}
+    alt={alt}
+    class={className}
+    loading={loading}
+    decoding="async"
+  />
+) : (
+  <Picture
+    src={asset}
+    alt={alt}
+    class={className}
+    formats={['avif', 'webp']}
+    sizes={sizes}
+    widths={widths}
+    loading={loading}
+  />
+)}

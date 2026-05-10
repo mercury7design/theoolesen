@@ -1,0 +1,21 @@
+{
+  "name": "Theo Olesen",
+  "role": "Designer",
+  "location": "Palm Desert, CA",
+  "description": "Theo Olesen is a designer in Palm Desert, CA, working across branding, creative, and the web.",
+  "about": "Theo Olesen is a designer in Palm Desert, CA. He works across branding, creative direction, and web projects, building identity systems and visual worlds that feel sharp, memorable, and human.",
+  "headshot": "/src/assets/site/olesenheadshot.webp",
+  "selectedClients": [],
+  "socials": [
+    {
+      "label": "Handle",
+      "value": "@dudebrotheo",
+      "url": ""
+    },
+    {
+      "label": "LinkedIn",
+      "value": "linkedin.com/in/theoolesen",
+      "url": "https://www.linkedin.com/in/theoolesen"
+    }
+  ]
+}

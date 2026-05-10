@@ -1,0 +1,689 @@
+{
+  "workIntro": "Theo Olesen is a designer who lives and works in Palm Desert, California. He creates functional brand identites, websites, and narratives. He believes that great design tells a story.",
+  "items": [
+    {
+      "slug": "plus-ultra",
+      "title": "Plus Ultra Window Cleaning",
+      "category": "branding",
+      "gridSize": "hero",
+      "client": "",
+      "year": "",
+      "thumbnail": "/src/assets/portfolio/plus-ultra/09-pu-with-window-cleaning.webp",
+      "description": "Placeholder copy for Plus Ultra Window Cleaning. This branding project will be updated with final context, process, and outcomes.",
+      "body": "Plus Ultra Window Cleaning is a branding project in Theo Olesen's portfolio.\n\nThis placeholder text can be replaced in Pages CMS with the final story, scope, and any launch details.",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/plus-ultra/01-img-5864.gif",
+          "alt": "Plus Ultra Window Cleaning image 1",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/plus-ultra/02-img-7977.webp",
+          "alt": "Plus Ultra Window Cleaning image 2",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/plus-ultra/03-img-8248.webp",
+          "alt": "Plus Ultra Window Cleaning image 3",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/plus-ultra/04-img-8304.webp",
+          "alt": "Plus Ultra Window Cleaning image 4",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/plus-ultra/05-img-8310.webp",
+          "alt": "Plus Ultra Window Cleaning image 5",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/plus-ultra/06-img-8950.webp",
+          "alt": "Plus Ultra Window Cleaning image 6",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/plus-ultra/07-img-8991.webp",
+          "alt": "Plus Ultra Window Cleaning image 7",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/plus-ultra/08-img-8992.webp",
+          "alt": "Plus Ultra Window Cleaning image 8",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/plus-ultra/09-pu-with-window-cleaning.webp",
+          "alt": "Plus Ultra Window Cleaning image 9",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/plus-ultra/10-transparent.webp",
+          "alt": "Plus Ultra Window Cleaning image 10",
+          "animated": false,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "violet-vendetta",
+      "title": "Violet Vendetta",
+      "category": "branding",
+      "gridSize": "standard",
+      "client": "",
+      "year": "",
+      "thumbnail": "/src/assets/portfolio/violet-vendetta/02-titles-horizontal-nodrips.webp",
+      "description": "Placeholder copy for Violet Vendetta. This branding project will be updated with final context, process, and outcomes.",
+      "body": "Violet Vendetta is a branding project in Theo Olesen's portfolio.\n\nThis placeholder text can be replaced in Pages CMS with the final story, scope, and any launch details.",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/violet-vendetta/01-0.webp",
+          "alt": "Violet Vendetta image 1",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/violet-vendetta/02-titles-horizontal-nodrips.webp",
+          "alt": "Violet Vendetta image 2",
+          "animated": false,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "album-covers",
+      "title": "Album Covers",
+      "category": "branding",
+      "gridSize": "standard",
+      "client": "",
+      "year": "",
+      "thumbnail": "/src/assets/portfolio/album-covers/09-moe-4.webp",
+      "description": "Placeholder copy for Album Covers. This branding project will be updated with final context, process, and outcomes.",
+      "body": "Album Covers is a branding project in Theo Olesen's portfolio.\n\nThis placeholder text can be replaced in Pages CMS with the final story, scope, and any launch details.",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/album-covers/01-img-5851.webp",
+          "alt": "Album Covers image 1",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/album-covers/02-img-5863.webp",
+          "alt": "Album Covers image 2",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/album-covers/03-img-5864.gif",
+          "alt": "Album Covers image 3",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/album-covers/04-img-5865.gif",
+          "alt": "Album Covers image 4",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/album-covers/05-img-8596.webp",
+          "alt": "Album Covers image 5",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/album-covers/06-moe-1.webp",
+          "alt": "Album Covers image 6",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/album-covers/07-moe-2.webp",
+          "alt": "Album Covers image 7",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/album-covers/08-moe-3.webp",
+          "alt": "Album Covers image 8",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/album-covers/09-moe-4.webp",
+          "alt": "Album Covers image 9",
+          "animated": false,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "beautiful-swear-words",
+      "title": "Beautiful Swear Words",
+      "category": "web",
+      "gridSize": "hero",
+      "client": "",
+      "year": "",
+      "thumbnail": "/src/assets/portfolio/beautiful-swear-words/07-bollocks3.webp",
+      "description": "Placeholder copy for Beautiful Swear Words. This web project will be updated with final context, process, and outcomes.",
+      "body": "Beautiful Swear Words is a web project in Theo Olesen's portfolio.\n\nThis placeholder text can be replaced in Pages CMS with the final story, scope, and any launch details.",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/01-asshat.gif",
+          "alt": "Beautiful Swear Words image 1",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/02-asswipe1.webp",
+          "alt": "Beautiful Swear Words image 2",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/03-asswipe2.webp",
+          "alt": "Beautiful Swear Words image 3",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/04-badonkadonk.gif",
+          "alt": "Beautiful Swear Words image 4",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/05-bollocks1.webp",
+          "alt": "Beautiful Swear Words image 5",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/06-bollocks2.webp",
+          "alt": "Beautiful Swear Words image 6",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/07-bollocks3.webp",
+          "alt": "Beautiful Swear Words image 7",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/08-damn.gif",
+          "alt": "Beautiful Swear Words image 8",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/09-fuckwit.gif",
+          "alt": "Beautiful Swear Words image 9",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/10-manwhore.gif",
+          "alt": "Beautiful Swear Words image 10",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/11-pornhub.webp",
+          "alt": "Beautiful Swear Words image 11",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/12-queef.gif",
+          "alt": "Beautiful Swear Words image 12",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/13-scrotum.gif",
+          "alt": "Beautiful Swear Words image 13",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/14-sex.gif",
+          "alt": "Beautiful Swear Words image 14",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/15-sharting.gif",
+          "alt": "Beautiful Swear Words image 15",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/16-shithead0.webp",
+          "alt": "Beautiful Swear Words image 16",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/17-shithead00.webp",
+          "alt": "Beautiful Swear Words image 17",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/18-shithead1.webp",
+          "alt": "Beautiful Swear Words image 18",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/19-shithead2.webp",
+          "alt": "Beautiful Swear Words image 19",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/20-shithead3.gif",
+          "alt": "Beautiful Swear Words image 20",
+          "animated": true,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/21-sideboob.webp",
+          "alt": "Beautiful Swear Words image 21",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/22-site1.webp",
+          "alt": "Beautiful Swear Words image 22",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/23-site2.webp",
+          "alt": "Beautiful Swear Words image 23",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/24-site3.webp",
+          "alt": "Beautiful Swear Words image 24",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/25-skateboard1.webp",
+          "alt": "Beautiful Swear Words image 25",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words/26-skateboard2.webp",
+          "alt": "Beautiful Swear Words image 26",
+          "animated": false,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "beautiful-swear-words-t-shirts",
+      "title": "Beautiful Swear Words T-Shirts",
+      "category": "branding",
+      "gridSize": "standard",
+      "client": "",
+      "year": "",
+      "thumbnail": "/src/assets/portfolio/beautiful-swear-words-t-shirts/01-img-0155.webp",
+      "description": "Placeholder copy for Beautiful Swear Words T-Shirts. This branding project will be updated with final context, process, and outcomes.",
+      "body": "Beautiful Swear Words T-Shirts is a branding project in Theo Olesen's portfolio.\n\nThis placeholder text can be replaced in Pages CMS with the final story, scope, and any launch details.",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words-t-shirts/01-img-0155.webp",
+          "alt": "Beautiful Swear Words T-Shirts image 1",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words-t-shirts/02-img-0160.webp",
+          "alt": "Beautiful Swear Words T-Shirts image 2",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words-t-shirts/03-img-0164.webp",
+          "alt": "Beautiful Swear Words T-Shirts image 3",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words-t-shirts/04-img-0165.webp",
+          "alt": "Beautiful Swear Words T-Shirts image 4",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words-t-shirts/05-img-2212-1.webp",
+          "alt": "Beautiful Swear Words T-Shirts image 5",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/beautiful-swear-words-t-shirts/06-img-2212.webp",
+          "alt": "Beautiful Swear Words T-Shirts image 6",
+          "animated": false,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "murals",
+      "title": "Murals",
+      "category": "creative",
+      "gridSize": "hero",
+      "client": "",
+      "year": "",
+      "thumbnail": "/src/assets/portfolio/murals/08-jessika-1.webp",
+      "description": "Placeholder copy for Murals. This creative project will be updated with final context, process, and outcomes.",
+      "body": "Murals is a creative project in Theo Olesen's portfolio.\n\nThis placeholder text can be replaced in Pages CMS with the final story, scope, and any launch details.",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/01-gatsby-1.webp",
+          "alt": "Murals image 1",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/02-gatsby-2.webp",
+          "alt": "Murals image 2",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/03-insignia1.webp",
+          "alt": "Murals image 3",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/04-insignia2.webp",
+          "alt": "Murals image 4",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/05-insignia3.webp",
+          "alt": "Murals image 5",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/06-insignia4.webp",
+          "alt": "Murals image 6",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/07-insignia5.webp",
+          "alt": "Murals image 7",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/08-jessika-1.webp",
+          "alt": "Murals image 8",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/09-jessika-2.webp",
+          "alt": "Murals image 9",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/10-jessika-3.webp",
+          "alt": "Murals image 10",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/11-jessika-4.webp",
+          "alt": "Murals image 11",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/12-serenity0.webp",
+          "alt": "Murals image 12",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/13-serenity1.webp",
+          "alt": "Murals image 13",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/14-serenity2.webp",
+          "alt": "Murals image 14",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/murals/15-serenity3.webp",
+          "alt": "Murals image 15",
+          "animated": false,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "cv-youth-compass",
+      "title": "CV Youth Compass",
+      "category": "branding",
+      "gridSize": "standard",
+      "client": "",
+      "year": "",
+      "thumbnail": "/src/assets/portfolio/cv-youth-compass/02-hi-res.webp",
+      "description": "Placeholder copy for CV Youth Compass. This branding project will be updated with final context, process, and outcomes.",
+      "body": "CV Youth Compass is a branding project in Theo Olesen's portfolio.\n\nThis placeholder text can be replaced in Pages CMS with the final story, scope, and any launch details.",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/cv-youth-compass/01-bags.webp",
+          "alt": "CV Youth Compass image 1",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/cv-youth-compass/02-hi-res.webp",
+          "alt": "CV Youth Compass image 2",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/cv-youth-compass/03-img-7856.webp",
+          "alt": "CV Youth Compass image 3",
+          "animated": false,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "rhino-snot",
+      "title": "Rhino Snot",
+      "category": "branding",
+      "gridSize": "standard",
+      "client": "",
+      "year": "",
+      "thumbnail": "/src/assets/portfolio/rhino-snot/01-rhino-snot.webp",
+      "description": "Placeholder copy for Rhino Snot. This branding project will be updated with final context, process, and outcomes.",
+      "body": "Rhino Snot is a branding project in Theo Olesen's portfolio.\n\nThis placeholder text can be replaced in Pages CMS with the final story, scope, and any launch details.",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/rhino-snot/01-rhino-snot.webp",
+          "alt": "Rhino Snot image 1",
+          "animated": false,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "storyboards",
+      "title": "Storyboards",
+      "category": "creative",
+      "gridSize": "standard",
+      "client": "",
+      "year": "",
+      "thumbnail": "/src/assets/portfolio/storyboards/03-pl-1.webp",
+      "description": "Placeholder copy for Storyboards. This creative project will be updated with final context, process, and outcomes.",
+      "body": "Storyboards is a creative project in Theo Olesen's portfolio.\n\nThis placeholder text can be replaced in Pages CMS with the final story, scope, and any launch details.",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/storyboards/01-0-prod-company.webp",
+          "alt": "Storyboards image 1",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/storyboards/02-comic.webp",
+          "alt": "Storyboards image 2",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/storyboards/03-pl-1.webp",
+          "alt": "Storyboards image 3",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/storyboards/04-pl-2.webp",
+          "alt": "Storyboards image 4",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/storyboards/05-pl-3.webp",
+          "alt": "Storyboards image 5",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/storyboards/06-pl-4.webp",
+          "alt": "Storyboards image 6",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/storyboards/07-pl-5-1.webp",
+          "alt": "Storyboards image 7",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/storyboards/08-theater1.webp",
+          "alt": "Storyboards image 8",
+          "animated": false,
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "/src/assets/portfolio/storyboards/09-theater2.webp",
+          "alt": "Storyboards image 9",
+          "animated": false,
+          "caption": ""
+        }
+      ]
+    }
+  ]
+}

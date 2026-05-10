@@ -1,0 +1,150 @@
+media:
+  input: "src/assets"
+  output: "/src/assets"
+
+content:
+  - name: "projects"
+    label: "Projects"
+    type: "file"
+    path: "src/data/projects.json"
+    fields:
+      - name: "workIntro"
+        label: "Work Intro"
+        type: "text"
+      - name: "items"
+        label: "Projects"
+        type: "object"
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: "title"
+            label: "Title"
+            type: "string"
+          - name: "slug"
+            label: "Slug"
+            type: "string"
+          - name: "category"
+            label: "Category"
+            type: "select"
+            options:
+              values:
+                - value: "branding"
+                  label: "Branding"
+                - value: "web"
+                  label: "Web"
+                - value: "creative"
+                  label: "Creative"
+          - name: "gridSize"
+            label: "Home Grid Size"
+            type: "select"
+            options:
+              values:
+                - value: "standard"
+                  label: "Standard"
+                - value: "hero"
+                  label: "Hero"
+          - name: "client"
+            label: "Client"
+            type: "string"
+            required: false
+          - name: "year"
+            label: "Year"
+            type: "string"
+            required: false
+          - name: "thumbnail"
+            label: "Thumbnail"
+            type: "image"
+          - name: "description"
+            label: "Short Description"
+            type: "text"
+          - name: "body"
+            label: "Project Body"
+            type: "text"
+          - name: "gallery"
+            label: "Gallery"
+            type: "object"
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{alt}"
+            fields:
+              - name: "type"
+                label: "Type"
+                type: "select"
+                options:
+                  values:
+                    - value: "image"
+                      label: "Image"
+                    - value: "video"
+                      label: "Video"
+              - name: "src"
+                label: "Image or Uploaded Video"
+                type: "image"
+                required: false
+              - name: "url"
+                label: "External Video URL"
+                type: "string"
+                required: false
+              - name: "poster"
+                label: "Video Poster"
+                type: "image"
+                required: false
+              - name: "alt"
+                label: "Alt Text"
+                type: "string"
+              - name: "caption"
+                label: "Caption"
+                type: "text"
+                required: false
+              - name: "animated"
+                label: "Animated Asset"
+                type: "boolean"
+                default: false
+
+  - name: "site"
+    label: "Site"
+    type: "file"
+    path: "src/data/site.json"
+    fields:
+      - name: "name"
+        label: "Name"
+        type: "string"
+      - name: "role"
+        label: "Role"
+        type: "string"
+      - name: "location"
+        label: "Location"
+        type: "string"
+      - name: "description"
+        label: "Site Description"
+        type: "text"
+      - name: "about"
+        label: "About Copy"
+        type: "text"
+      - name: "headshot"
+        label: "Headshot"
+        type: "image"
+      - name: "selectedClients"
+        label: "Selected Clients"
+        type: "string"
+        list: true
+      - name: "socials"
+        label: "Social Links"
+        type: "object"
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}"
+        fields:
+          - name: "label"
+            label: "Label"
+            type: "string"
+          - name: "value"
+            label: "Display Value"
+            type: "string"
+          - name: "url"
+            label: "URL"
+            type: "string"
+            required: false

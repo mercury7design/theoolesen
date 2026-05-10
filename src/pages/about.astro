@@ -1,37 +1,54 @@
 ---
 import Base from '../layouts/Base.astro';
+import PortfolioMedia from '../components/PortfolioMedia.astro';
+import { getSiteData } from '../lib/portfolio';
+
+const site = getSiteData();
 ---
-<Base title="About — Theo Olesen" description="Theo Olesen is a Brand Architect working in brand identity, web, and typography.">
+<Base title="About — Theo Olesen" description={site.description}>
   <div class="about">
     <div class="about__photo">
-      <!-- Replace with your photo -->
-      <img src="/images/theo.jpg" alt="Theo Olesen" />
+      <PortfolioMedia
+        asset={site.headshotAsset}
+        src={site.headshot}
+        alt="Theo Olesen"
+        loading="eager"
+        class="about__photo-image"
+        sizes="(min-width: 900px) 32rem, 100vw"
+      />
     </div>
 
     <div class="about__content">
-      <h1 class="about__name">Theo Olesen</h1>
-      <p class="about__title">Brand Architect</p>
+      <h1 class="about__name">{site.name}</h1>
+      <p class="about__title">{site.role}</p>
+      <p class="about__location">{site.location}</p>
 
-      <p class="about__bio">
-        <!-- Replace with your bio -->
-        I craft identities for brands that mean something. Working across brand identity, web, and typography — I build the visual language that makes a company recognizable, trusted, and impossible to ignore.
-      </p>
+      {site.about.split('\n\n').filter(Boolean).map((paragraph) => (
+        <p class="about__bio">{paragraph}</p>
+      ))}
 
-      <div>
-        <p class="about__section-label">Selected Clients</p>
-        <ul class="about__clients">
-          <!-- Replace with your clients -->
-          <li>Client One</li>
-          <li>Client Two</li>
-          <li>Client Three</li>
-          <li>Client Four</li>
-          <li>Client Five</li>
-        </ul>
-      </div>
+      {site.selectedClients.length > 0 && (
+        <div>
+          <p class="about__section-label">Selected Clients</p>
+          <ul class="about__clients">
+            {site.selectedClients.map((client) => <li>{client}</li>)}
+          </ul>
+        </div>
+      )}
 
       <div class="about__contact">
-        <p class="about__section-label">Contact</p>
-        <a href="mailto:theoolesen@gmail.com">theoolesen@gmail.com</a>
+        <p class="about__section-label">Links</p>
+        <ul class="about__links">
+          {site.socials.map((social) => (
+            <li>
+              {social.url ? (
+                <a href={social.url} target="_blank" rel="noreferrer">{social.label}: {social.value}</a>
+              ) : (
+                <span>{social.label}: {social.value}</span>
+              )}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   </div>
